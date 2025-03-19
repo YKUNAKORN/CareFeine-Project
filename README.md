@@ -1,59 +1,78 @@
+# CareFeine Project
 
-# kunakorn_s_application2
-### Table of contents
-- [System requirements](#system-requirements)
-- [Figma design guidelines for better UI accuracy](#figma-design-guideline-for-better-accuracy)
-- [Check the UI of the entire app](#app-navigations)
-- [Application structure](#project-structure)
-- [How to format your code?](#how-you-can-do-code-formatting)
-- [How you can improve code readability?](#how-you-can-improve-the-readability-of-code)
-- [Libraries and tools used](#libraries-and-tools-used)
-- [Support](#support)
+CareFeine is a mobile application aimed at providing a seamless and efficient way to manage caffeine intake and promote a healthier lifestyle. Each cateagory has suggeste coffee menus with detailed caffeine content. 
 
-### System requirements
+## Table of Contents
 
-Dart SDK Version 3.3.2 or greater.
-Flutter SDK Version 3.19.4 or greater.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-### Figma design guidelines for better UI accuracy
+## Features
 
-Read our guidelines to increase the accuracy of design-to-code conversion by optimizing Figma designs.
-https://docs.dhiwise.com/docs/Designguidelines/intro
+- Track daily caffeine consumption
+- Set and manage caffeine intake limits
+- View detailed statistics and reports
+- Receive notifications and reminders
+- Multi-language support
 
-### Check the UI of the entire app
+## Installation
 
-Check the UI of all the app screens from a single place by setting up the 'initialRoute'  to AppNavigation in the AppRoutes.dart file.
+### Prerequisites
 
-### Application structure
-After successful build, your application structure should look like this:
-                    
-```
-.
-├── android                         - It contains files required to run the application on an Android platform.
-├── assets                          - It contains all images and fonts of your application.
-├── ios                             - It contains files required to run the application on an iOS platform.
-├── lib                             - Most important folder in the application, used to write most of the Dart code..
-    ├── main.dart                   - Starting point of the application
-    ├── core
-    │   ├── app_export.dart         - It contains commonly used file imports
-    │   ├── constants               - It contains static constant class file
-    │   └── utils                   - It contains common files and utilities of the application
-    ├── presentation                - It contains widgets of the screens
-    ├── routes                      - It contains all the routes of the application
-    └── theme                       - It contains app theme and decoration classes
-    └── widgets                     - It contains all custom widget classes
-```
-### How to format your code?
+- [Flutter](https://flutter.dev/docs/get-started/install) should be installed on your machine.
+- For iOS development, ensure you have Xcode installed on your macOS.
 
-- if your code is not formatted then run following command in your terminal to format code
-  ```
-  dart format .
-  ```
+### Steps
 
-### How you can improve code readability?
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/YKUNAKORN/CareFeine-Project.git
+    cd CareFeine-Project
+    ```
 
-Resolve the errors and warnings that are shown in the application.
+2. Install the dependencies:
+    ```sh
+    flutter pub get
+    ```
 
-### Support
+3. Run the application:
+    ```sh
+    flutter run
+    ```
 
-If you have any problems or questions, go to our Discord channel, where we will help you as quickly as possible: https://discord.com/invite/rFMnCG5MZ7
+## Usage
+
+1. Open the application on your mobile device.
+2. Create an account or log in if you already have one.
+3. Start tracking your caffeine intake by adding beverages consumed.
+4. Set your daily caffeine limit and receive notifications when you approach or exceed it.
+5. View your consumption history and statistics to manage your habits better.
+
+## Contributing
+
+We welcome contributions from the community! Here are some ways you can help:
+
+- Report bugs and suggest features by opening an issue.
+- Fork the repository and submit pull requests for improvements.
+- Write tests to improve code coverage.
+
+### Steps to Contribute
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Acknowledgements
+
+- Thanks to the Flutter and Dart communities for their support and contributions.
+- Special thanks to all contributors of this project.
